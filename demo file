@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>harshi's web page</title>
+</head>
+<body style="background-color:pink;">
+<h1 style="background-color:skyblue; text-align:left;">heading 1</h1>
+<a href="https://www.youtube.com">link to youtube</a>
+
+<hr>
+<h2 style="font-size:30px; background-color:lightblue; text-align:left;">heading 2</h2>
+<p style="color:purple;"><i>sneha is playing temple run game<br> in web technology class<br> at poki games</i></p>
+<a href="https://www.poki.com">link to online games</a><br>
+<p style="color:darkslateblue;"><i>playing games gives to mind refresh</i></p>
+<a href="https://www.google.com">link to google</a><br>
+<p style="color:navy;"><b>google is a source to learn everything</b></p>
+<a href="https://www.zee5.com">link to zee5</a><br>
+<a href="#C4">importance of google</a><br>
+<hr>
+<p style="color:darkcyan;">
+  <em>My Bonnie lies over the ocean.</em>
+
+  <sub><b>My Bonnie lies over the sea.</b></sub>
+  <b><!--waste fellow--></b>
+  <sup>My Bonnie lies over the ocean.</sup>
+
+  <strong>Oh, bring back my Bonnie to me.</strong><br>
+<p>importance of google.</p>
+<bockquote cite="https://www.google.com">
+it gives you knowledge,it is necessary in these days,without google you cannot do anythingin now a days ,it is very important and became a part in our life</blockquote
+</p>
+<hr>
+</body>
+<html>
