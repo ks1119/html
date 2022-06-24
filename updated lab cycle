@@ -1,0 +1,540 @@
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@ks1119 
+Harshitha8000
+/
+html
+Public
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+html/lab cycle
+@Harshitha8000
+Harshitha8000 Update lab cycle
+Latest commit b1bc593 11 days ago
+ History
+ 1 contributor
+512 lines (472 sloc)  15.5 KB
+
+========================================================================================
+
+p-1
+========================================================================================
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Time table</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                }
+
+            /* Style the header */
+            header {
+                background-color: rgb(137, 71, 212);
+                padding: 30px;
+                text-align: center;
+                font-size: 35px;
+                color: white;
+            }
+
+            /* Create two columns/boxes that floats next to each other */
+            nav {
+                float: left;
+                width: 30%;
+                height: 300px; /* only for demonstration, should be removed */
+                background: rgb(171, 140, 243);
+                padding: 20px;
+            }
+
+            /* Style the list inside the menu */
+            nav ul {
+                list-style-type: none;
+                padding: 0;
+            }
+
+            article {
+                float: left;
+                padding: 20px;
+                width: 70%;
+                background-color: #b49fe7;
+                height: 300px; /* only for demonstration, should be removed */
+            }
+
+            /* Clear floats after the columns */
+            section::after {
+                content: "Professors to corresponding Subjects";
+                display: table;
+                clear: both;
+            }
+
+            /* Style the footer */
+            footer {
+                background-color: rgb(137, 71, 212);
+                padding: 10px;
+                text-align: center;
+                color: white;
+            }
+
+            /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+            @media (max-width: 600px) {
+                nav, article {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            .tab{
+                align:center;
+                color:rgb(255, 255, 255);
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h2> Time table</h2>
+        </header>
+        <section>
+            <div class="tab">
+                <nav>
+                    <ul>
+                        <li><a href="#">section-A</a></li>
+                        <li><a href="#">section-B</a></li>
+                        <li><a href="#">section-C</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <article>
+                <div class="tab">
+                    <table>
+                        <tr>
+                            <th>DAY</th>
+                            <th>8:00-9:00</th>
+                            <th>9:00-10:00</th>
+                            <th>10:00-11:00</th>
+                            <th>11:00-12:00</th>
+                            <th>12:00-1:00</th>
+                            <th>1:00-2:00</th>
+                            <th>2:00-3:00</th>
+                        </tr>
+                        <tr>
+                            <th>MON</th>
+                            <td colspan="3">WT LAB(C-III)</td>
+                            <td rowspan="6">LUNCH</td>
+                            <td>DBMS</td>
+                            <td>OS</td>
+                            <td>SPORTS</td>
+                        </tr>
+                        <tr>
+                            <th>TUE</th>
+                            <td>SE</td>
+                            <td>E&HV</td>
+                            <td>CS</td>
+                            <td colspan="3">DBMS LAB(C-III)</td>
+                        </tr>
+                        <tr>
+                            <th>WED</th>
+                            <td>OS</td>
+                            <td>DBMS</td>
+                            <td>WT</td>
+                            <td>SE</td>
+                            <td>CS</td>
+                            <td>LIBRARY</td>
+                        </tr>
+                        <tr>
+                            <th>THU</th>
+                            <td>SE</td>
+                            <td>OS</td>
+                            <td>DBMS</td>
+                            <td>SOC</td>
+                            <td>CS</td>
+                            <td>WT</td>
+                        </tr>
+                        <tr>
+                            <th>FRI</th>
+                            <td colspan="3">CS LAB(C-III)</td>
+                            <td>CS</td>
+                            <td>DBMS</td>
+                            <td>WT</td>
+                        </tr>
+                        <tr>
+                            <th>SAT</th>
+                            <td colspan="2">SOC LAB</td>
+                            <td>WT</td>
+                            <td>E&HV</td>
+                            <td colspan="2">COMPETITVE CODING(E-LE)</td>
+                        </tr>
+                    </table>
+                </div>
+            </article>
+        </section>
+        <footer>
+            <div class="tab">
+                <table>
+                    <tr>
+                        <th>code</th>
+                        <th>name of the subject</th>
+                        <th>section c</th>
+                    </tr>
+                    <tr>
+                        <td>cs221</td>
+                        <td>cs</td>
+                        <td>Dr.BSR</td>
+                    </tr>
+                    <tr>
+                        <td>cs222</td>
+                        <td>DBMS</td>
+                        <td>Dr.CHA</td>
+                    </tr>
+                    <tr>
+                        <td>cs223</td>
+                        <td>os</td>
+                        <td>KSK</td>
+                    </tr>
+                    <tr>
+                        <td>cs224</td>
+                        <td>sw</td>
+                        <td>RMB</td>
+                    </tr>   
+                    <tr>
+                        <td>cs225</td>
+                        <td>WT</td>
+                        <td>ER</td>
+                    </tr>
+                </table>
+            </div>
+        </footer>
+    </body>
+</html>
+
+========================================================================================
+
+p-2
+=========================================================================================
+f-1
+----------------------------------------------------------------------------------------
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Frames with Audio and Video</title>
+    </head>
+
+    <frameset cols = "20%,60%,20%">
+        <frame name = "left" src = "left_frame.html" />
+        <frame name = "center" src = "center_frame.html" />
+        <frame name = "right" src = "right_frame.html" />
+    </frameset>
+</html>
+----------------------------------------------------------------------------------------
+f-2
+----------------------------------------------------------------------------------------
+<!DOCTYPE html>
+
+<html>
+    <body>
+        <center>
+            <h2 style="color:royalblue;">This is the Left Frame with embedded audio and video</h2>
+            <audio controls>
+                <source src="" type="audio/mp4audio">
+            </audio>
+        </center>
+    </body>
+</html>
+------------------------------------------------------------------------------------------
+f-3
+------------------------------------------------------------------------------------------
+
+<!DOCTYPE html>
+
+<html>
+    <body>
+        <center>
+            <h2 style="color:royalblue;">This is the Center Frame with embedded audio and video</h2>
+            <video width="90%" height="40%" controls><source src="Bill Gates- The next outbreak- We’re not ready - TED.mp4" type="video/mp4"></video>
+        </center>
+    </body>
+</html>
+--------------------------------------------------------------------------------------------
+f-4
+--------------------------------------------------------------------------------------------
+<!DOCTYPE html>
+
+<html>
+    <body>
+        <center>
+            <h2 style="color:royalblue;">This is the Right Frame with embedded audio and video</h2>
+            <audio controls>
+                <source src="" type="audio/mp4audio">
+            </audio>
+        </center>
+    </body>
+</html>
+---------------------------------------------------------------------------------------------
+
+=======================================================================================
+
+p-3
+=======================================================================================
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSE Department</title>
+    </head>
+    <body style="background-color:bisque;">
+        <h2 style="text-align:center;">CSE DEPARTMENT</h2>
+        <p>Hii,my name is Harshitha Posani and I am currently pursuing in computer science and engineering from RVR and JC College of Engineering.The department in our college has various computer labs
+            <ol>
+                <li>E-learning center</li>
+                <li>seminar halls</li>
+                <li>IOT labs</li>
+                <li> department library</li>
+            </ol>
+            <a href="https://en.wikipedia.org/wiki/Computer_science_and_engineering#:~:text=Computer%20Science%20and%20Engineering%20(CSE,of%20engineering%20informatics%20academic%20programs.">
+                <img src= "https://newsnreleases.com/wp-content/uploads/2021/03/CSE.jpg" alt="cse photo" style="width:220px;height:220px;">
+            </a>
+            <br>
+            
+            The primary vision of our department is to produce globally competent engineers to <a href="https://www.dictionary.com/browse/cater">cater</a> to the challenging computing needs of the society and mission is to prepare graduates with Sound knowledge of Computer Science and Engineering to solve real world problems and Adequate skills and behavior to exhibit code of conduct in their professional practice.
+            <br>The faculty of the department also work on various research like 
+            <ul>
+                <li>deep learning</li>
+                <li>machine learning</li>
+                <li>NLP</li>
+                <li>AI</li>
+                <li>Bio-informatics</li>
+                <li>etc..</li>
+            </ul>
+            <br>The department also conduct various coding competitions,work shops and student associations.
+            <br>The students also actively participate in various clubs and also conduct various various events.
+            <br>Overall,The department has beautiful atmosphere around the place.
+        <a href="#top">go to top</a></p>
+    </body>
+</html>
+
+==================================================================================
+
+p-4
+==================================================================================
+
+Main page:
+<html>
+<head>
+<title>home page</title>
+</head>
+<body>
+<center><b><h1>welcome to amazon.com</h1></b><br><br>
+<form method="post"action="login.htm">
+<input type="submit"value="click">registration user login hear
+</center>
+</body>
+</html>
+
+Login page:
+<html>
+<head>
+<title>login page</title>
+</head>
+<body>
+<center>
+<form method="post" action="login.html">
+<p><strong>name:</strong>
+<input type="text" name="username" size="25">
+</p>
+<p><strong>password</strong>
+<input name="pass" type="password" size="6"></p>
+<p><strong>male</strong>
+<input type="radio" value="male"<hacked>&nbsp&nbsp</p>
+<p><strong>female</strong>
+<option><input type="radio" value="female"<hacked>&nbsp;</p>
+<input type="submit" value="submit">&nbsp&nbps
+<input type="reset" value="reset">
+<a href="registration.html">new users register hear </a>
+</form>
+</center>
+</body>
+</html>
+
+Registration:
+<html>
+<head>
+<title>registration</title>
+</head>
+<body>
+<center>
+<form method="post" action="login.html">
+<p><strong>name:</strong>
+<input type="text" name="username" size="25">
+</p>
+<p><strong>password</strong>
+<input name="pass" type="password" size="6"></p>
+<p><strong>male</strong>
+<input type="radio" value="male"<hacked>&nbsp&nbsp</p>
+<p><strong>female</strong>
+<input type="radio" value="female" </p>
+<p><strong>address:</strong>
+<textarea name="address" row="6" cols="20">
+</textarea>
+</p>
+<p><strong>mobile no:</strong>
+<input type="text" name="phno" size="10">
+</p><br><br>
+<input type="submit" value="submit">
+<input type="reset" value="reset">
+</form>
+</center>
+</body>
+</html>
+
+Books Catalog:
+<html>
+<head>
+<title>books catalog</title>
+</head>
+<body>
+<center><h1><p>welcome to books catalog</p></h1>
+<table border="1"width="25%"height="50%">
+<tr>
+<th>computers</th>
+<th>electronics</th>
+<th>biotech</th>
+<th>mechanical</th>
+</tr>
+<tr>
+<td>
+</body>
+</html>
+
+Order.html:
+<html>
+<body bgcolor="pink"><br><br><br>
+<div align="center"><pre>
+LOGIN ID           :<input type="text" name="id"><br>
+TITLE                 :<input type="text" name="title"><br>
+NO.OF BOOKS  :<input type="text" name="no"><br>
+COST OF BOOK:<input type="text"name="cost"><br>
+DATE                 :<input tpe="text" name="date"><br></pre><br><br>
+</div>
+<br><br>
+<div align="center">
+<input type="submit" value="ok" name="button1"> &nbsp;&nbsp;&nbsp;&nbsp;
+<input type="reset" value="clear" name="button2">
+</body>
+</html>
+
+Profile.html:
+<html>
+<body bgcolor="pink"><br><br><br>
+<script language="javascript">
+function validate()
+{
+var flag=1;
+if(document.myform.id.value==""||
+document.myform.pwd.value=="")
+{
+flag=0;
+}
+if(flag==1)
+{
+alert("VALID INPUT");
+}
+else
+{
+alert("INVALID INPUT");
+document.myform.focus();
+}
+}
+</script>
+<form name="myform">
+<div align="center"><pre>
+LOGIN ID     :<input type="text" name="id"><br>
+PASSWORD:<input type="password" name="pwd"></pre><br><br>
+</div>
+<br><br>
+<div align="center">
+<input type="submit" value="ok" onClick="validate()">&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="reset" value="clear" >
+</form>
+</body>
+</html>
+
+
+==================================================================================
+
+p-5
+==================================================================================
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <style>
+        p {
+            color: red;
+            font-weight: bold;
+            font-size: 50;
+        }
+    </style>
+    <script language="javascript">
+        function capital() {
+            var country = document.forms["capitalform"].Country.value;
+            var capital = " Please select any country ";
+            if (country == "India") {
+                Capital = "New Delhi";
+            }
+            if (country == "Japan") {
+                Capital = "Tokyo";
+            }
+            if (country == "South Korea") {
+                Capital = "seoul";
+            }
+            if (country == "USA") {
+                Capital = "Washington DC";
+            }
+            if (country == "Canada") {
+                Capital = "Ottawa";
+            }
+            document.getElementById("Capital").innerHTML = Capital;
+        }
+    </script>
+</head>
+
+<body>
+    <form name="capitalform">
+        <br />
+            Select a Country : <select name="Country" onchange="capital()">
+                <option value="India">India</option>
+                <option value="Japan">Japan</option>
+                <option value="South Korea">South Korea</option>
+                <option value="USA">USA</option>
+                <option value="Canada">Canada</option>
+            </select>
+            <br />
+            <br />
+            <font color="Red" size="6">Capital is :</font>
+            <p id="Capital"></p>
+    </form>
+</body>
+
+</html>
+
+===============================================================================================
