@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title><b>Time table</b></title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+div {
+    background: linear-gradient(to top right, #ff66ff 0%, #ccff99 100%);
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family:<i></i>;
+                }
+
+            /* Style the header */
+div {
+    background: linear-gradient(to top right, #ffccff 0%, #cc99ff 100%);
+}
+
+            header {
+                background-color:#d9ccff;
+                padding: 10px;
+                text-align: center;
+                font-size: 35px;
+                color:black;
+            }
+
+            /* Create two columns/boxes that floats next to each other */
+            nav {
+                float: left;
+                width: 30%;
+                height: 300px; /* only for demonstration, should be removed */
+                background:#e6ccff;
+                padding: 20px;
+            }
+
+            /* Style the list inside the menu */
+            nav ul {
+                list-style-type: none;
+                padding: 0;
+            }
+
+            article {
+                float: left;
+                padding: 20px;
+                width: 70%;
+                background-color:#f2ccff;
+                height: 300px; /* only for demonstration, should be removed */
+            }
+
+            /* Clear floats after the columns */
+            section::after {
+                content: "Professors to corresponding Subjects";
+                display: table;
+                clear: both;
+            }
+
+            /* Style the footer */
+            footer {
+                background-color:#ffccef;
+                padding: 10px;
+                text-align: center;
+                color: white;
+            }
+
+            /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+            @media (max-width: 600px) {
+                nav, article {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            .tab{
+                 align:center;
+                color:rgb(0,0,0);
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h2> Time table</h2>
+        </header>
+        <section>
+            <div class="tab">
+                <nav>
+                    <ul>
+                        <li><a href="#"><b>section-A</b></a></li>
+                        <li><a href="#"><b>section-B</b></a></li>
+                        <li><a href="#"><b>section-C</b></a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <article>
+                <div class="tab">
+                    <table>
+                        <tr>
+                            <th>DAY</th>
+                            <th>8:00-9:00</th>
+                            <th>9:00-10:00</th>
+                            <th>10:00-11:00</th>
+                            <th>11:00-12:00</th>
+                            <th>12:00-1:00</th>
+                            <th>1:00-2:00</th>
+                            <th>2:00-3:00</th>
+                        </tr>
+                        <tr>
+                            <th>MON</th>
+                            <td colspan="3">WT LAB(C-III)</td>
+                            <td rowspan="6">LUNCH</td>
+                            <td>DBMS</td>
+                            <td>OS</td>
+                            <td>SPORTS</td>
+                        </tr>
+                        <tr>
+                            <th>TUE</th>
+                            <td>SE</td>
+                            <td>E&HV</td>
+                            <td>CS</td>
+                            <td colspan="3">DBMS LAB(C-III)</td>
+                        </tr>
+                        <tr>
+                            <th>WED</th>
+                            <td>OS</td>
+                            <td>DBMS</td>
+                            <td>WT</td>
+                            <td>SE</td>
+                            <td>CS</td>
+                            <td>LIBRARY</td>
+                        </tr>
+                        <tr>
+                            <th>THU</th>
+                            <td>SE</td>
+                            <td>OS</td>
+                            <td>DBMS</td>
+                            <td>SOC</td>
+                            <td>CS</td>
+                            <td>WT</td>
+                        </tr>
+                        <tr>
+                            <th>FRI</th>
+                            <td colspan="3">CS LAB(C-III)</td>
+                            <td>CS</td>
+                            <td>DBMS</td>
+                            <td>WT</td>
+                        </tr>
+                        <tr>
+                            <th>SAT</th>
+                            <td colspan="2">SOC LAB</td>
+                            <td>WT</td>
+                            <td>E&HV</td>
+                            <td colspan="2">COMPETITVE CODING(E-LE)</td>
+                        </tr>
+                    </table>
+                </div>
+            </article>
+        </section>
+        <footer>
+            <div class="tab">
+                <table>
+                    <tr>
+                        <th>code</th>
+                        <th>name of the subject</th>
+                        <th>section c</th>
+                    </tr>
+                    <tr>
+                        <td>cs221</td>
+                        <td>cs</td>
+                        <td>Dr.BSR</td>
+                    </tr>
+                    <tr>
+                        <td>cs222</td>
+                        <td>DBMS</td>
+                        <td>Dr.CHA</td>
+                    </tr>
+                    <tr>
+                        <td>cs223</td>
+                        <td>os</td>
+                        <td>KSK</td>
+                    </tr>
+                    <tr>
+                        <td>cs224</td>
+                        <td>sw</td>
+                        <td>RMB</td>
+                    </tr>   
+                    <tr>
+                        <td>cs225</td>
+                        <td>WT</td>
+                        <td>ER</td>
+                    </tr>
+                </table>
+            </div>
+        </footer>
+    </body>
+</html>
